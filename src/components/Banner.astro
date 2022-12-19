@@ -1,0 +1,60 @@
+<section class="bannerHome">
+	<div>
+
+	</div>
+	<article class="bannerHome__text">
+		<h1>
+			Deimar
+			<span>López</span>
+		</h1>
+		<h2 class="bannerHome__subTitle">Developer Full-Stack</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quo facilis in harum impedit nemo ullam omnis repellendus nostrum laudantium voluptatibus beatae iure incidunt necessitatibus </p>
+	</article>
+	<figure class="bannerHome__img">
+		<img src="/public/assets/svg/banner.svg" alt="hombre porgramadno enciama de una computadora animada">
+	</figure>
+</section>
+<style lang="scss">
+	@import "./../styles/app.scss";
+	.bannerHome{
+		min-height: 80vh;
+		margin: 0 auto;
+		max-width: calc(10rem + 43rem + 60.8rem);
+		display: grid;
+		align-content: center;
+		grid-template-columns: 100px 1fr 1fr;
+		.bannerHome__text{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 43rem;
+			h1{
+				font-size: 7.3rem;
+				color: $secundario;
+				span{
+					margin-top: -1.8rem;
+					margin-left: 9.4rem;
+					display: block;
+					color: $primario;
+				}
+			}
+			.bannerHome__subTitle{
+				margin: 2rem 0 4rem 0;
+				font-size: 3rem;
+				letter-spacing: .2rem;
+				color: $secundario;
+				font-weight: 300;
+			}
+		}
+
+		.bannerHome__img{
+			display: flex;
+			align-items: center;
+			margin: 0;
+			img{
+				width: 100%;
+				max-width: 60.8rem;
+			}
+		}
+	}
+</style>

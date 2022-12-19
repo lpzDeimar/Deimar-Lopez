@@ -1,0 +1,55 @@
+
+<header class="header">
+  <nav class="header__nav">
+  <a href="/" class="header__logo">
+    <img src="/public/assets/img/logo.png" alt="Deimar Lopez Logo">
+  </a>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/Skills">Skills</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="header__icons">    
+    <a href="" download="Hoja_de_vida_Deimar_Lopez">
+      <img src="/public/assets/svg/cv.svg" alt="Hoja de vida deimar lopez">
+    </a>
+    <a href="" target="_blank">
+      <img src="/public/assets/svg/aboutMy.svg" alt="Quien es deimar Lopez">
+    </a>
+  </div>
+</header>
+
+<style lang="scss">
+  @import "./../styles/app.scss";
+  .header {
+    max-width: 120rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    .header__nav{
+      display: flex;
+      align-items: center;
+      gap: 8rem;
+      .header__logo{
+        max-width: 10rem;
+      }
+      ul{
+        display: flex;
+        gap: 2rem;
+        li{
+          a{
+            color: $secundario;
+            font-size: 1.8rem;
+            font-weight: bold;
+            transition: color 400ms linear;
+            &:hover{
+              cursor: pointer;
+              color: $primario;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>
